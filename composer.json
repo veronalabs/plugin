@@ -1,0 +1,23 @@
+{
+    "name": "veronalabs/plugin",
+    "description": "Example WordPress Plugin Based on Rabbit Framework!",
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "rabbit",
+        "framework"
+    ],
+    "homepage": "https://github.com/veronalabs/plugin",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/veronalabs/plugin/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "ExamplePlugin\\": "src"
+        }
+    },
+    "require": {
+        "veronalabs/rabbit": "^1.4"
+    }
+}
