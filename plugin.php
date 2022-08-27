@@ -12,6 +12,7 @@
  */
 
 use Rabbit\Application;
+use Rabbit\Redirects\RedirectServiceProvider;
 use Rabbit\Database\DatabaseServiceProvider;
 use Rabbit\Logger\LoggerServiceProvider;
 use Rabbit\Plugin;
@@ -76,7 +77,8 @@ class ExamplePluginInit extends Singleton
                 $plugin->loadPluginTextDomain();
 
                 // load template
-                $this->application->view('plugin-template.php', ['foo' => 'bar']);
+                $this->application->template('plugin-template.php', ['foo' => 'bar']);
+
                 ///...
 
             });
