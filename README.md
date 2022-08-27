@@ -5,7 +5,7 @@
 
 
 ## About
-Example WordPress Plugin Based on Rabbit Framework!
+Example WordPress Plugin Based on [Rabbit Framework](https://github.com/veronalabs/rabbit)
 
 ## Requirements
 
