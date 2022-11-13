@@ -17,3 +17,25 @@ Example WordPress Plugin Based on [Rabbit Framework](https://github.com/veronala
 ```bash
 composer require veronalabs/plugin
 ```
+
+## Development
+
+If you are planning to add style to your plugin, make sure you have the following requirements:
+```bash
+node.js: <= v14.16.0
+npm: <= 6.14.11
+```
+
+And run these commands:
+
+**Install packages**
+```bash
+npm install
+```
+
+**Run the start command**
+```bash
+npm start
+// or
+npm run start
+```
