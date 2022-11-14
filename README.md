@@ -39,3 +39,13 @@ npm start
 // or
 npm run start
 ```
+
+### Commands
+
+```shell script
+"compile:scss" : Compiles scss files
+"postcss:autoprefixer": Parses your CSS and adds vendor prefixes
+"dev": Runs "compile:scss" and "postcss:autoprefixer" in a sequence
+"watch": Watches for changes in the /assets/src/scss/ folder and run "dev" command on every change
+"start": Runs "dev" and "watch" commands concurrently
+```
