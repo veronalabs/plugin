@@ -42,7 +42,7 @@ npm run start
 
 ### Commands
 
-```shell script
+```
 "compile:scss" : Compiles scss files
 "postcss:autoprefixer": Parses your CSS and adds vendor prefixes
 "dev": Runs "compile:scss" and "postcss:autoprefixer" in a sequence
