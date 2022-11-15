@@ -1,0 +1,31 @@
+{
+  "name": "veronalabs-plugin",
+  "version": "1.0.0",
+  "description": "Example WordPress Plugin Based on Rabbit Framework!",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev & npm run watch",
+    "watch": "watch \"npm run dev\" ./assets/src/scss",
+    "dev": "npm run compile:scss && npm run postcss:autoprefixer",
+    "compile:scss": "node-sass assets/src/scss/styles.scss assets/css/styles.css --output-style compressed",
+    "postcss:autoprefixer": "postcss assets/css/styles.css --use autoprefixer -b 'last 2 versions' -d assets/css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "node-sass": "^4.9.0",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0",
+    "watch": "^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veronalabs/plugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/veronalabs/plugin/issues"
+  },
+  "homepage": "https://github.com/veronalabs/plugin#readme"
+}

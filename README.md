@@ -17,3 +17,35 @@ Example WordPress Plugin Based on [Rabbit Framework](https://github.com/veronala
 ```bash
 composer require veronalabs/plugin
 ```
+
+## Development
+
+If you are planning to add style to your plugin, make sure you have the following requirements:
+```bash
+node.js: <= v14.16.0
+npm: <= 6.14.11
+```
+
+And run these commands:
+
+**Install packages**
+```bash
+npm install
+```
+
+**Run the start command**
+```bash
+npm start
+// or
+npm run start
+```
+
+### Commands
+
+```
+"compile:scss" : Compiles scss files
+"postcss:autoprefixer": Parses your CSS and adds vendor prefixes
+"dev": Runs "compile:scss" and "postcss:autoprefixer" in a sequence
+"watch": Watches for changes in the /assets/src/scss/ folder and run "dev" command on every change
+"start": Runs "dev" and "watch" commands concurrently
+```
